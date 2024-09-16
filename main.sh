@@ -5,4 +5,5 @@ for i in {1..10000}; do
  systemd-machine-id-setup
  timeout 10m ./samples
  sleep 5
+ pkill samples
 done
